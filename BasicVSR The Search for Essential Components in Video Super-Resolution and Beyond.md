@@ -12,11 +12,11 @@ BasicVSR: The Search for Essential Components in Video Super-Resolution and Beyo
 
  下图给出了所提方案与其他视频超分方案在性能与推理速度放慢的对比，可以看到BasicVSR与IconVSR遥遥领先。
 
-![VSR_model](/media/yubo/data/Paper Notes/论文/IMG/VSR_model.png)
+![VSR_model](/paper/VSR_model.png)
 
 同时作者对现有各式各样的VSR方案按照各个模块的功能(propagation, alignment, aggregation, upsampling)进行了拆分，相关总结见下表。
 
-![image-20210513115515715](/home/yubo/.config/Typora/typora-user-images/image-20210513115515715.png)
+![image-20210513115515715](/paper/)
 
 - Propagation：在这里特指信息的流动，比如局部信息，单向信息流动，双向信息流动；
 - Alignment：在这里特指对齐的类型以及有无；
