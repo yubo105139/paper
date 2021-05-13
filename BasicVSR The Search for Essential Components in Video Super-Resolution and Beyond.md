@@ -12,7 +12,7 @@ BasicVSR: The Search for Essential Components in Video Super-Resolution and Beyo
 
  下图给出了所提方案与其他视频超分方案在性能与推理速度放慢的对比，可以看到BasicVSR与IconVSR遥遥领先。
 
-![VSR_model](https://github.com/yubo105139/paper/raw/main/VSR_model.png)
+![VSR_model](https://github.com/yubo105139/paper/blob/main/VSR_model.png)
 
 同时作者对现有各式各样的VSR方案按照各个模块的功能(propagation, alignment, aggregation, upsampling)进行了拆分，相关总结见下表。
 
