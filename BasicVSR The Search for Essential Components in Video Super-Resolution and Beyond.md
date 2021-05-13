@@ -16,7 +16,7 @@ BasicVSR: The Search for Essential Components in Video Super-Resolution and Beyo
 
 同时作者对现有各式各样的VSR方案按照各个模块的功能(propagation, alignment, aggregation, upsampling)进行了拆分，相关总结见下表。
 
-![image-20210513115515715](/paper/)
+![视频超分四个模块](https://github.com/yubo105139/paper/blob/main/视频超分四个模块.png)
 
 - Propagation：在这里特指信息的流动，比如局部信息，单向信息流动，双向信息流动；
 - Alignment：在这里特指对齐的类型以及有无；
@@ -34,7 +34,7 @@ BasicVSR: The Search for Essential Components in Video Super-Resolution and Beyo
 
 ### BasicVSR
 
-![image-20210513123858231](/home/yubo/.config/Typora/typora-user-images/image-20210513123858231.png)
+![BasicVSR模型](https://github.com/yubo105139/paper/blob/main/BasicVSR模型.png)
 
 上图给出了BasicVSR的架构示意图。BasicVSR采用了双向传播机制、特征层面的光流对齐、concate进行特征集成，pixelshuffle进行上采样。
 
@@ -44,7 +44,7 @@ BasicVSR: The Search for Essential Components in Video Super-Resolution and Beyo
 
 - Information-Refil： 不精确的对齐会导致误差累积问题，尤其是该文所采用的长期传播方案。为消除上述问题，作者提出了信息寄存机制，见下图。
 
-![image-20210513124433415](/home/yubo/.config/Typora/typora-user-images/image-20210513124433415.png)
+![IconVSR](https://github.com/yubo105139/paper/blob/main/IconVSR.png)
 
 它采用了额外的特征提取器提取关键帧与近邻帧的特征，所提取的特征将于对齐特征通过卷积进行融合。该过程描述如下：
 
@@ -58,7 +58,7 @@ BasicVSR: The Search for Essential Components in Video Super-Resolution and Beyo
 
  下表给出了所提方案与其他视频超分方案在不同退化方式、不同测试集上的指标、推理速度以及参数量的对比。
 
-![image-20210513124933748](/home/yubo/.config/Typora/typora-user-images/image-20210513124933748.png)
+![BasicVSR实验结果](https://github.com/yubo105139/paper/blob/main/BasicVSR实验结果.png)
 
 表中显示出BasicVSR的性能略微弱于IconVSR。但是相较于EDVR，其模型小，推理速度快。是当前实际应用的最优项。
 
